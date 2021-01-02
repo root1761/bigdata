@@ -18,5 +18,6 @@
     <module>hive</module>
     <module>kafka</module>
     <module>spark</module>
+    <module>minio</module>
 </modules>
 </project>
