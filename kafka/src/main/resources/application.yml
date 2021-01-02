@@ -1,0 +1,36 @@
+
+server:
+  port: 9000
+  servlet:
+    context-path: /kafka
+spring:
+  kafka:
+    bootstrap-servers: 192.168.42.133:9092,192.168.42.133:9093,192.168.42.133:9094
+    producer:
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer:  org.apache.kafka.common.serialization.StringSerializer
+      acks: 1
+    consumer:
+      auto-commit-interval: 10000
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer:  org.apache.kafka.common.serialization.StringDeserializer
+      enable-auto-commit: false
+      security:
+        protocol: SASL_PLAINTEXT
+      sasl:
+        kerberos:
+          service:
+            name: kafka
+      kerberos:
+        domain:
+          name: hadoop.hadoop.com
+    listener:
+      concurrency: 5
+      ack-mode: manual_immediate
+      missing-topics-fatal: false
+  application:
+    name: kafka

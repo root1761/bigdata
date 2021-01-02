@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hbase" />
+        <module name="minio" />
+        <module name="dubbo_provider" />
+        <module name="spark" />
+        <module name="hive" />
+        <module name="kafka" />
+        <module name="bigdata" />
+        <module name="dubbo_client" />
+        <module name="hadoop" />
+        <module name="hadoop_client" />
+        <module name="elasticsearch" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo_client" options="-parameters" />
+      <module name="dubbo_provider" options="-parameters" />
+      <module name="hadoop_client" options="-parameters" />
+      <module name="hive" options="-parameters" />
+      <module name="kafka" options="-parameters" />
+      <module name="minio" options="-parameters" />
+    </option>
+  </component>
+</project>

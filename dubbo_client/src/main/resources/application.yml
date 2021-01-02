@@ -1,0 +1,17 @@
+dubbo:
+  application:
+    name: consumer
+  registry:
+    address: zookeeper://192.168.42.133:2181
+  config-center:
+    timeout: 10000
+  consumer:
+    timeout: 30000
+  scan:
+    base-packages: com.example.dubbo.service
+
+server:
+  port: 8081
+spring:
+  application:
+    name: consumer

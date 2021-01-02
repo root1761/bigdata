@@ -1,0 +1,19 @@
+dubbo:
+  application:
+    name: provider2
+  scan:
+    base-packages: com.demo.dubbo.service.impl
+  protocol:
+    name: dubbo
+    port: 12347
+  registry:
+    address: zookeeper://192.168.42.143:2181
+  service:
+    version: 1.0.0
+  config-center:
+    timeout: 30000
+spring:
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8083

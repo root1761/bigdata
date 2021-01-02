@@ -1,0 +1,10 @@
+mapper\KeyValueMapper.class
+main\MapReducerSortMain.class
+mapper\CountMapper.class
+reducer\SortReducer.class
+main\MapReduceCountMain.class
+main\MapReduceKeyValueMain.class
+test\MapReduceTest.class
+reducer\CountReducer.class
+mapper\SortMapper.class
+reducer\KeyValueReducer.class

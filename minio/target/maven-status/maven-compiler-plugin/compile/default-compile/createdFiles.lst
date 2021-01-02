@@ -1,0 +1,9 @@
+com\lnsoft\minio\config\MinioConfig.class
+com\lnsoft\minio\MinioApplication.class
+com\lnsoft\minio\response\Response.class
+com\lnsoft\minio\controller\MinioController.class
+com\lnsoft\minio\enums\ResponseCode.class
+com\lnsoft\minio\param\MinioParams.class
+com\lnsoft\minio\response\Response$DataType.class
+com\lnsoft\minio\config\Swagger2Config.class
+com\lnsoft\minio\util\MinioTemplate.class
